@@ -95,7 +95,7 @@ export default function Hero({ soundEnabled }) {
         </motion.div>
 
         {/* Avatar image */}
-        <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-white/10 z-10 bg-black">
+        <div className="relative w-36 h-36 md:w-52 md:h-52 rounded-full overflow-hidden border-2 border-white/10 z-10 bg-black">
           <img
             src={avatarImg}
             alt="Shubham's avatar"
