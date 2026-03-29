@@ -3,6 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import { ArrowDown, Download } from "lucide-react";
 import avatarImg from "../assets/avatar.webp";
 import { useSoundEffect } from "../hooks/useSoundEffect";
+import { PORTFOLIO_INFO } from "../constants/portfolio";
 
 const roles = ["Frontend Engineer", "UI Architect", "Creative Developer"];
 
@@ -127,7 +128,7 @@ export default function Hero({ soundEnabled }) {
         className="text-center mb-6"
       >
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-white leading-none mb-4">
-          Hi, I'm <span className="text-gradient">Shubham Ram</span>
+          Hi, I'm <span className="text-gradient">{PORTFOLIO_INFO.name}</span>
         </h1>
       </motion.div>
 
@@ -169,7 +170,7 @@ export default function Hero({ soundEnabled }) {
         </button>
 
         <a
-          href="#"
+          href={PORTFOLIO_INFO.resume}
           className="flex items-center gap-2 px-6 py-3 rounded-full glass text-white/80 text-sm font-medium hover:text-white hover:border-amber-500/30 transition-all duration-300 group"
         >
           <Download

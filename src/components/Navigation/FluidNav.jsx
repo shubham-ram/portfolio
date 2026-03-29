@@ -10,6 +10,7 @@ import {
   X,
 } from "lucide-react";
 import { useSoundEffect } from "../../hooks/useSoundEffect";
+import { PORTFOLIO_INFO } from "../../constants/portfolio";
 
 const sections = [
   { id: "hero", label: "Home" },
@@ -148,7 +149,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
           {/* Social Icons */}
           <div className="flex items-center gap-0.5">
             <a
-              href="https://github.com/shubham-ram"
+              href={PORTFOLIO_INFO.github}
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 text-white/50 hover:text-amber-400 hover:bg-white/5 rounded-full transition-all duration-300"
@@ -157,7 +158,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
               <Github size={15} />
             </a>
             <a
-              href="https://www.linkedin.com/in/shubhamram/"
+              href={PORTFOLIO_INFO.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 text-white/50 hover:text-amber-400 hover:bg-white/5 rounded-full transition-all duration-300"
@@ -166,7 +167,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
               <Linkedin size={15} />
             </a>
             <a
-              href="#"
+              href={PORTFOLIO_INFO.resume}
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 text-white/50 hover:text-amber-400 hover:bg-white/5 rounded-full transition-all duration-300"
@@ -226,7 +227,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
 
               <div className="flex items-center gap-6">
                 <a
-                  href="https://github.com/shubham-ram"
+                  href={PORTFOLIO_INFO.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/50 hover:text-amber-400 transition-colors"
@@ -234,7 +235,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/shubhamram/"
+                  href={PORTFOLIO_INFO.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/50 hover:text-amber-400 transition-colors"
@@ -242,7 +243,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
                   <Linkedin size={24} />
                 </a>
                 <a
-                  href="#"
+                  href={PORTFOLIO_INFO.resume}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/50 hover:text-amber-400 transition-colors"

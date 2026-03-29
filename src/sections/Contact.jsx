@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
 import { Mail, Github, Linkedin, ArrowUpRight, Heart } from "lucide-react";
+import { PORTFOLIO_INFO } from "../constants/portfolio";
 
 const socials = [
-  { name: "GitHub", icon: Github, href: "https://github.com/shubham-ram" },
+  { name: "GitHub", icon: Github, href: PORTFOLIO_INFO.github },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://www.linkedin.com/in/shubhamram/",
+    href: PORTFOLIO_INFO.linkedin,
   },
   //   { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "Email", icon: Mail, href: "mailto:shubhamram2k@gmail.com" },
+  { name: "Email", icon: Mail, href: `mailto:${PORTFOLIO_INFO.email}` },
 ];
 
 export default function Contact() {
@@ -38,7 +39,7 @@ export default function Contact() {
 
           {/* CTA Button */}
           <motion.a
-            href="mailto:shubhamram2k@gmail.com"
+            href={`mailto:${PORTFOLIO_INFO.email}`}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
             className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 text-black font-semibold text-base shadow-[0_0_40px_rgba(245,158,11,0.3)] hover:shadow-[0_0_60px_rgba(245,158,11,0.5)] transition-shadow duration-500"
