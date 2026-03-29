@@ -28,7 +28,10 @@ export default function Experience() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="experience" className="section-padding px-4 md:px-8 max-w-6xl mx-auto">
+    <section
+      id="experience"
+      className="section-padding px-4 md:px-8 max-w-6xl mx-auto"
+    >
       {/* Section heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -65,11 +68,13 @@ export default function Experience() {
             >
               {/* Timeline dot */}
               <div className="absolute left-4 md:left-8 top-8 -translate-x-1/2">
-                <div className={`w-3 h-3 rounded-full ${
-                  exp.current
-                    ? "bg-amber-400 shadow-[0_0_12px_rgba(245,158,11,0.6)]"
-                    : "bg-white/20 border border-white/10"
-                }`} />
+                <div
+                  className={`w-3 h-3 rounded-full ${
+                    exp.current
+                      ? "bg-amber-400 shadow-[0_0_12px_rgba(245,158,11,0.6)]"
+                      : "bg-white/20 border border-white/10"
+                  }`}
+                />
               </div>
 
               {/* Card */}
@@ -92,7 +97,9 @@ export default function Experience() {
                       </div>
                       <p className="text-white/60 font-medium">{exp.role}</p>
                     </div>
-                    <span className="text-white/40 text-sm font-mono">{exp.period}</span>
+                    <span className="text-white/40 text-sm font-mono">
+                      {exp.period}
+                    </span>
                   </div>
 
                   <p className="text-white/50 font-light leading-relaxed mb-4">

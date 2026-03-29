@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter, ArrowUpRight, Heart } from "lucide-react";
+import { Mail, Github, Linkedin, ArrowUpRight, Heart } from "lucide-react";
 
 const socials = [
   { name: "GitHub", icon: Github, href: "https://github.com/shubham-ram" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/shubhamram/" },
-  { name: "Twitter", icon: Twitter, href: "#" },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/shubhamram/",
+  },
+  //   { name: "Twitter", icon: Twitter, href: "#" },
   { name: "Email", icon: Mail, href: "mailto:shubhamram2k@gmail.com" },
 ];
 
@@ -12,7 +16,10 @@ export default function Contact() {
   return (
     <>
       {/* Contact Section */}
-      <section id="contact" className="section-padding px-4 md:px-8 max-w-4xl mx-auto text-center">
+      <section
+        id="contact"
+        className="section-padding px-4 md:px-8 max-w-4xl mx-auto text-center"
+      >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +74,8 @@ export default function Contact() {
             © 2026 Ram. All rights reserved.
           </p>
           <p className="text-white/20 text-xs flex items-center gap-1">
-            Crafted with <Heart size={12} className="text-amber-500/50" /> using React & Framer Motion
+            Crafted with <Heart size={12} className="text-amber-500/50" /> using
+            React & Framer Motion
           </p>
         </div>
       </footer>
