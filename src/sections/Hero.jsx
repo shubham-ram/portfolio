@@ -24,7 +24,7 @@ export default function Hero({ soundEnabled }) {
       if (!isDeleting) {
         setDisplayText(role.slice(0, charIndex + 1));
         charIndex++;
-        play("tick");
+        // play("tick");
         if (charIndex === role.length) {
           isDeleting = false;
           timeout = setTimeout(() => {
