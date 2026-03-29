@@ -4,12 +4,21 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    company: "Instant Innovation",
+    company: "Instinct Innovations",
     role: "Software Developer",
     period: "Nov 2023 — Present",
     description:
       "Building and shipping production-grade frontend applications. Working on complex UI architectures, performance optimization, and modern React patterns.",
-    tech: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+    tech: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "NodeJs",
+      "NestJs",
+      "Wordpress",
+      "Playwright",
+    ],
     current: true,
   },
   {
@@ -18,7 +27,7 @@ const experiences = [
     period: "Aug 2022 — Nov 2023",
     description:
       "Developed logistics SaaS platform features. Collaborated with cross-functional teams to deliver robust, scalable frontend solutions.",
-    tech: ["React", "JavaScript", "REST APIs", "Agile"],
+    tech: ["React", "Next.js", "Redux", "JavaScript", "REST APIs", "Agile"],
     current: false,
   },
 ];

@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { MapPin, Calendar, Code2, Sparkles } from "lucide-react";
+import { MapPin, Calendar, Code2, Sparkles, Globe, Clock } from "lucide-react";
 import reactIcon from "../assets/reactjs.svg";
 import nextjsIcon from "../assets/nextjs.svg";
 import typescriptIcon from "../assets/typescript.svg";
@@ -9,6 +9,10 @@ import nodejsIcon from "../assets/nodejs.svg";
 import nestjsIcon from "../assets/nestjs.svg";
 import playwrightIcon from "../assets/playwright.svg";
 import mysqlIcon from "../assets/mysql.svg";
+import postgresqlIcon from "../assets/postgresql.svg";
+import materialuiIcon from "../assets/materialui.svg";
+import reduxIcon from "../assets/redux.svg";
+import socketIcon from "../assets/socket.svg";
 
 const techStack = [
   { name: "React", icon: reactIcon },
@@ -17,8 +21,12 @@ const techStack = [
   { name: "Tailwind", icon: tailwindIcon },
   { name: "Node.js", icon: nodejsIcon },
   { name: "NestJs", icon: nestjsIcon },
-  { name: "Playwright", icon: playwrightIcon },
+  { name: "PostgreSQL", icon: postgresqlIcon },
   { name: "MySQL", icon: mysqlIcon },
+  { name: "Redux", icon: reduxIcon },
+  { name: "Socket.io", icon: socketIcon },
+  { name: "Material UI", icon: materialuiIcon },
+  { name: "Playwright", icon: playwrightIcon },
 ];
 
 const containerVariants = {
@@ -106,6 +114,7 @@ export default function About() {
           variants={cardVariants}
           className="glass rounded-2xl p-8 flex flex-col items-center justify-center group hover:border-amber-500/20 transition-colors duration-500 relative overflow-hidden"
         >
+          <Clock className="absolute -right-4 -bottom-4 w-32 h-32 text-white/5 group-hover:text-amber-500/10 transition-colors duration-500 -rotate-12" />
           <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           <div className="relative z-10 text-center">
             <Calendar size={20} className="text-amber-400 mx-auto mb-3" />
@@ -138,7 +147,11 @@ export default function About() {
                   className="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:border-amber-500/20 hover:bg-white/[0.05] transition-all duration-300 cursor-default"
                 >
                   <span className="w-5 h-5 flex-shrink-0">
-                    <img src={tech.icon} alt={tech.name} className="w-full h-full object-contain" />
+                    <img
+                      src={tech.icon}
+                      alt={tech.name}
+                      className="w-full h-full object-contain"
+                    />
                   </span>
                   <span className="text-sm text-white/70 font-medium">
                     {tech.name}
@@ -154,6 +167,7 @@ export default function About() {
           variants={cardVariants}
           className="glass rounded-2xl p-8 flex flex-col items-center justify-center group hover:border-amber-500/20 transition-colors duration-500 relative overflow-hidden"
         >
+          <Globe className="absolute -right-6 -bottom-6 w-36 h-36 text-white/5 group-hover:text-emerald-500/10 transition-colors duration-500 rotate-12" />
           <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           <div className="relative z-10 text-center">
             <motion.div
