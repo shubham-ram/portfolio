@@ -113,7 +113,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
         {/* Social Icons */}
         <div className="flex items-center gap-0.5">
           <a
-            href="#"
+            href="https://github.com/shubham-ram"
             target="_blank"
             rel="noopener noreferrer"
             className="p-1.5 text-white/50 hover:text-amber-400 hover:bg-white/5 rounded-full transition-all duration-300"
@@ -122,7 +122,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
             <Github size={15} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/shubhamram/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-1.5 text-white/50 hover:text-amber-400 hover:bg-white/5 rounded-full transition-all duration-300"

@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Mail, Github, Linkedin, Twitter, ArrowUpRight, Heart } from "lucide-react";
 
 const socials = [
-  { name: "GitHub", icon: Github, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
+  { name: "GitHub", icon: Github, href: "https://github.com/shubham-ram" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/shubhamram/" },
   { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "Email", icon: Mail, href: "mailto:hello@ram.dev" },
+  { name: "Email", icon: Mail, href: "mailto:shubhamram2k@gmail.com" },
 ];
 
 export default function Contact() {
