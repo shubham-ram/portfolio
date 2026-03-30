@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useSoundEffect } from "../../hooks/useSoundEffect";
 import { PORTFOLIO_INFO } from "../../constants/portfolio";
+import { cn } from "../../lib/utils";
 
 const sections = [
   { id: "hero", label: "Home" },
@@ -72,9 +73,10 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 flex items-center justify-between pointer-events-none transition-all duration-500 ${
+        className={cn(
+          "fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 flex items-center justify-between pointer-events-none transition-all duration-500",
           scrolled ? "py-3" : "py-5"
-        }`}
+        )}
       >
         {/* Logo */}
         <div className="pointer-events-auto z-50">
@@ -108,9 +110,10 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className={`relative px-3 md:px-4 py-1.5 text-sm font-medium transition-colors duration-300 rounded-full ${
+                className={cn(
+                  "relative px-3 md:px-4 py-1.5 text-sm font-medium transition-colors duration-300 rounded-full",
                   isActive ? "text-white" : "text-white/50 hover:text-white/80"
-                }`}
+                )}
               >
                 {isActive && (
                   <motion.div
@@ -204,11 +207,12 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
                       ease: [0.22, 1, 0.36, 1],
                     }}
                     onClick={() => scrollToSection(section.id)}
-                    className={`text-4xl sm:text-5xl font-heading font-bold tracking-tight transition-colors duration-300 ${
+                    className={cn(
+                      "text-4xl sm:text-5xl font-heading font-bold tracking-tight transition-colors duration-300",
                       isActive
                         ? "text-amber-500 text-shadow-glow"
                         : "text-white hover:text-amber-400/80"
-                    }`}
+                    )}
                   >
                     {section.label}
                   </motion.button>
