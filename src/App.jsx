@@ -41,8 +41,8 @@ function App() {
         <main>
           <Hero soundEnabled={soundEnabled} />
           <About />
-          <Projects />
           <Experience />
+          <Projects />
           <Contact />
         </main>
       </div>
