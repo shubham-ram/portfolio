@@ -4,8 +4,8 @@ import {
   Github,
   Linkedin,
   FileText,
-  Volume2,
-  VolumeX,
+  //   Volume2,
+  //   VolumeX,
   Menu,
   X,
 } from "lucide-react";
@@ -75,7 +75,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
         transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className={cn(
           "fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 flex items-center justify-between pointer-events-none transition-all duration-500",
-          scrolled ? "py-3" : "py-5"
+          scrolled ? "py-3" : "py-5",
         )}
       >
         {/* Logo */}
@@ -112,7 +112,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
                 onClick={() => scrollToSection(section.id)}
                 className={cn(
                   "relative px-3 md:px-4 py-1.5 text-sm font-medium transition-colors duration-300 rounded-full",
-                  isActive ? "text-white" : "text-white/50 hover:text-white/80"
+                  isActive ? "text-white" : "text-white/50 hover:text-white/80",
                 )}
               >
                 {isActive && (
@@ -138,16 +138,16 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
           <div className="w-px h-5 bg-white/10 mx-1" />
 
           {/* Sound Toggle */}
-          <button
+          {/* <button
             onClick={onToggleSound}
             className="p-1.5 text-white/50 hover:text-amber-400 hover:bg-white/5 rounded-full transition-all duration-300"
             aria-label={soundEnabled ? "Mute sounds" : "Enable sounds"}
           >
             {soundEnabled ? <Volume2 size={15} /> : <VolumeX size={15} />}
-          </button>
+          </button> */}
 
           {/* Divider */}
-          <div className="w-px h-5 bg-white/10 mx-1" />
+          {/* <div className="w-px h-5 bg-white/10 mx-1" /> */}
 
           {/* Social Icons */}
           <div className="flex items-center gap-0.5">
@@ -211,7 +211,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
                       "text-4xl sm:text-5xl font-heading font-bold tracking-tight transition-colors duration-300",
                       isActive
                         ? "text-amber-500 text-shadow-glow"
-                        : "text-white hover:text-amber-400/80"
+                        : "text-white hover:text-amber-400/80",
                     )}
                   >
                     {section.label}
@@ -255,7 +255,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
                   <FileText size={24} />
                 </a>
 
-                <div className="w-px h-6 bg-white/10 mx-2" />
+                {/* <div className="w-px h-6 bg-white/10 mx-2" />
 
                 <button
                   aria-label="Toggle Sound"
@@ -263,7 +263,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
                   className="text-white/50 hover:text-amber-400 transition-colors"
                 >
                   {soundEnabled ? <Volume2 size={24} /> : <VolumeX size={24} />}
-                </button>
+                </button> */}
               </div>
             </motion.div>
           </motion.div>
