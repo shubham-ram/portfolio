@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# If you ever create a sitemap, uncomment the line below and update the URL:
+# Sitemap: https://shubham-ram.github.io/sitemap.xml
