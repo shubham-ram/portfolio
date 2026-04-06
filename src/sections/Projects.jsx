@@ -23,7 +23,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title: "JobPilot Copilot",
+    title: "JobPilot",
     description:
       "A full-stack AI application that generates highly personalized, context-aware answers for job applications using Gemini AI, integrating user profile context and secure Turnstile bot protection.",
     features: [
