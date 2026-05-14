@@ -5,7 +5,7 @@ import avatarImg from "../assets/avatar.webp";
 import { useSoundEffect } from "../hooks/useSoundEffect";
 import { PORTFOLIO_INFO } from "../constants/portfolio";
 
-const roles = ["Frontend Engineer", "UI Architect", "Creative Developer"];
+const roles = ["Full-Stack Engineer", "Frontend Engineer", "UI Architect"];
 
 export default function Hero({ soundEnabled }) {
   const ref = useRef(null);

@@ -95,16 +95,18 @@ export default function About() {
               </span>
             </div>
             <p className="text-white/80 text-lg leading-relaxed font-light">
-              With over <span className="text-white font-medium">3 years</span>{" "}
-              of experience in frontend engineering, I specialize in crafting
-              pixel-perfect, performant web experiences. I love bridging the gap
-              between design and engineering — turning complex interactions into
-              smooth, intuitive interfaces.
+              Full-stack engineer with{" "}
+              <span className="text-white font-medium">3+ years</span> of
+              experience building production web apps end-to-end — strongest on
+              the frontend (React, Next.js, design systems, performance), and
+              comfortable across the stack with Node, NestJS, Postgres, and
+              real-time APIs.
             </p>
             <p className="text-white/60 text-base leading-relaxed font-light mt-4">
-              Currently exploring WebXR, spatial UIs, and AI-powered developer
-              tools. When I'm not coding, you'll find me exploring new design
-              trends or tinkering with creative experiments.
+              I love bridging design and engineering — turning complex
+              interactions into smooth, intuitive interfaces, while shaping the
+              APIs and data models that power them. Currently exploring
+              AI-powered developer tools and creative web experiments.
             </p>
           </div>
         </motion.div>
