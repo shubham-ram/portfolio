@@ -5,7 +5,7 @@ export const PORTFOLIO_INFO = {
   github: "https://github.com/shubham-ram",
   linkedin: "https://www.linkedin.com/in/shubhamram/",
   resume:
-    "https://drive.google.com/file/d/1ViGdXE9y0xPP9VFJhvLSUTWxF3xWsz4J/view?usp=sharing",
+    "https://drive.google.com/file/d/1N1-RJwTQijlgRVATc-_FZftWB3ufywRa/view?usp=sharing",
   resumeDownload:
-    "https://drive.google.com/uc?export=download&id=1ViGdXE9y0xPP9VFJhvLSUTWxF3xWsz4J",
+    "https://drive.google.com/uc?export=download&id=1N1-RJwTQijlgRVATc-_FZftWB3ufywRa",
 };
