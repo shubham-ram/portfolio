@@ -16,8 +16,8 @@ import { cn } from "../../lib/utils";
 const sections = [
   { id: "hero", label: "Home" },
   { id: "about", label: "About" },
-  { id: "projects", label: "Work" },
   { id: "experience", label: "Experience" },
+  { id: "projects", label: "Work" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -82,7 +82,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
         <div className="pointer-events-auto z-50">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-xl font-heading font-bold tracking-tight text-white hover:text-amber-400 transition-colors duration-300"
+            className="text-xl font-heading font-bold tracking-tight text-white hover:text-amber-400 transition-colors duration-300 cursor-pointer"
           >
             Shubham<span className="text-amber-400">.</span>
           </button>
@@ -111,7 +111,7 @@ export default function FluidNav({ soundEnabled, onToggleSound }) {
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
                 className={cn(
-                  "relative px-3 md:px-4 py-1.5 text-sm font-medium transition-colors duration-300 rounded-full",
+                  "relative px-3 md:px-4 py-1.5 text-sm font-medium transition-colors duration-300 rounded-full cursor-pointer",
                   isActive ? "text-white" : "text-white/50 hover:text-white/80",
                 )}
               >
