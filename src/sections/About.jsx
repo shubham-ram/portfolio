@@ -1,6 +1,14 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { MapPin, Calendar, Code2, Sparkles, Globe, Clock } from "lucide-react";
+import {
+  MapPin,
+  Calendar,
+  Code2,
+  Sparkles,
+  Globe,
+  Clock,
+  Network,
+} from "lucide-react";
 import reactIcon from "../assets/reactjs.svg";
 import nextjsIcon from "../assets/nextjs.svg";
 import typescriptIcon from "../assets/typescript.svg";
@@ -13,21 +21,87 @@ import postgresqlIcon from "../assets/postgresql.svg";
 import materialuiIcon from "../assets/materialui.svg";
 import reduxIcon from "../assets/redux.svg";
 import socketIcon from "../assets/socket.svg";
+import expressIcon from "../assets/express.svg";
+import prismaIcon from "../assets/prisma.svg";
+import mongodbIcon from "../assets/mongodb.svg";
+import storybookIcon from "../assets/storybook.svg";
+import vercelIcon from "../assets/vercel.svg";
 
-const techStack = [
-  { name: "React", icon: reactIcon },
-  { name: "Next.js", icon: nextjsIcon },
-  { name: "TypeScript", icon: typescriptIcon },
-  { name: "Tailwind", icon: tailwindIcon },
-  { name: "Node.js", icon: nodejsIcon },
-  { name: "NestJs", icon: nestjsIcon },
-  { name: "PostgreSQL", icon: postgresqlIcon },
-  { name: "MySQL", icon: mysqlIcon },
-  { name: "Redux", icon: reduxIcon },
-  { name: "Socket.io", icon: socketIcon },
-  { name: "Material UI", icon: materialuiIcon },
-  { name: "Playwright", icon: playwrightIcon },
+const techGroups = [
+  {
+    label: "Frontend",
+    accent: "amber",
+    items: [
+      { name: "React", icon: reactIcon },
+      { name: "Next.js", icon: nextjsIcon },
+      { name: "TypeScript", icon: typescriptIcon },
+      { name: "Tailwind", icon: tailwindIcon },
+      { name: "Redux", icon: reduxIcon },
+      { name: "Material UI", icon: materialuiIcon },
+    ],
+  },
+  {
+    label: "Backend",
+    accent: "sky",
+    items: [
+      { name: "Node.js", icon: nodejsIcon },
+      { name: "NestJs", icon: nestjsIcon },
+      { name: "Express", icon: expressIcon },
+      { name: "Socket.io", icon: socketIcon },
+      { name: "REST", IconComponent: Network },
+    ],
+  },
+  {
+    label: "Database",
+    accent: "emerald",
+    items: [
+      { name: "PostgreSQL", icon: postgresqlIcon },
+      { name: "MySQL", icon: mysqlIcon },
+      { name: "MongoDB", icon: mongodbIcon },
+      { name: "Prisma", icon: prismaIcon },
+    ],
+  },
+  {
+    label: "Tooling",
+    accent: "violet",
+    items: [
+      { name: "Playwright", icon: playwrightIcon },
+      { name: "Storybook", icon: storybookIcon },
+      { name: "Vercel", icon: vercelIcon },
+    ],
+  },
 ];
+
+const accentStyles = {
+  amber: {
+    dot: "bg-amber-400 shadow-[0_0_10px_rgba(245,158,11,0.6)]",
+    text: "text-amber-300",
+    pill: "bg-amber-500/10 border-amber-500/20 text-amber-300",
+    glow: "from-amber-500/[0.07]",
+    chipHover: "hover:border-amber-400/30 hover:bg-amber-500/[0.04]",
+  },
+  sky: {
+    dot: "bg-sky-400 shadow-[0_0_10px_rgba(56,189,248,0.6)]",
+    text: "text-sky-300",
+    pill: "bg-sky-500/10 border-sky-500/20 text-sky-300",
+    glow: "from-sky-500/[0.07]",
+    chipHover: "hover:border-sky-400/30 hover:bg-sky-500/[0.04]",
+  },
+  emerald: {
+    dot: "bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.6)]",
+    text: "text-emerald-300",
+    pill: "bg-emerald-500/10 border-emerald-500/20 text-emerald-300",
+    glow: "from-emerald-500/[0.07]",
+    chipHover: "hover:border-emerald-400/30 hover:bg-emerald-500/[0.04]",
+  },
+  violet: {
+    dot: "bg-violet-400 shadow-[0_0_10px_rgba(167,139,250,0.6)]",
+    text: "text-violet-300",
+    pill: "bg-violet-500/10 border-violet-500/20 text-violet-300",
+    glow: "from-violet-500/[0.07]",
+    chipHover: "hover:border-violet-400/30 hover:bg-violet-500/[0.04]",
+  },
+};
 
 const containerVariants = {
   hidden: {},
@@ -140,26 +214,64 @@ export default function About() {
                 Tech Stack
               </span>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {techStack.map((tech) => (
-                <motion.div
-                  key={tech.name}
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:border-amber-500/20 hover:bg-white/[0.05] transition-all duration-300 cursor-default"
-                >
-                  <span className="w-5 h-5 flex-shrink-0">
-                    <img
-                      src={tech.icon}
-                      alt={tech.name}
-                      className="w-full h-full object-contain"
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {techGroups.map((group) => {
+                const a = accentStyles[group.accent];
+                return (
+                  <div
+                    key={group.label}
+                    className="relative rounded-xl border border-white/[0.06] bg-white/[0.015] p-4 overflow-hidden"
+                  >
+                    <div
+                      className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${a.glow} to-transparent opacity-60`}
                     />
-                  </span>
-                  <span className="text-sm text-white/70 font-medium">
-                    {tech.name}
-                  </span>
-                </motion.div>
-              ))}
+                    <div className="relative z-10">
+                      <div className="flex items-center justify-between mb-3">
+                        <div
+                          className={`inline-flex items-center gap-2 px-2.5 py-1 rounded-full border ${a.pill}`}
+                        >
+                          <span
+                            className={`w-1.5 h-1.5 rounded-full ${a.dot}`}
+                          />
+                          <span className="text-[11px] font-semibold uppercase tracking-[0.12em]">
+                            {group.label}
+                          </span>
+                        </div>
+                        <span className="text-[11px] font-mono text-white/30">
+                          {String(group.items.length).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {group.items.map((tech) => (
+                          <motion.div
+                            key={tech.name}
+                            whileHover={{ y: -1 }}
+                            className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-black/30 border border-white/[0.06] ${a.chipHover} transition-colors duration-300 cursor-default`}
+                          >
+                            <span className="w-4 h-4 flex-shrink-0 flex items-center justify-center">
+                              {tech.IconComponent ? (
+                                <tech.IconComponent
+                                  size={14}
+                                  className={a.text}
+                                />
+                              ) : (
+                                <img
+                                  src={tech.icon}
+                                  alt={tech.name}
+                                  className="w-full h-full object-contain"
+                                />
+                              )}
+                            </span>
+                            <span className="text-xs text-white/75 font-medium">
+                              {tech.name}
+                            </span>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </motion.div>
