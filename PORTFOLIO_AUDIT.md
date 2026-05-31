@@ -75,7 +75,7 @@ return (
 | # | Section | File | Content | Interactive |
 |---|---|---|---|---|
 | 1 | Hero | `src/sections/Hero.jsx` | Avatar, name, animated typewriter subtitle cycling through three role titles, "See My Work" + "Resume" CTAs. | Avatar hover scale + glow, dual rotating orbital rings around avatar, status dot pulse, typing/deleting role animation, "See My Work" smooth-scrolls to `#projects`. |
-| 2 | About | `src/sections/About.jsx` | Bento-grid: bio card, "3+ Years of Experience" card, 12-icon tech stack grid, "India — Available for remote work" card. | Cards reveal on scroll-in-view via Framer Motion staggered variants; per-card hover gradients; tech-stack tiles have `whileHover` scale/lift. |
+| 2 | About | `src/sections/About.jsx` | Bento-grid: bio card, "4+ Years of Experience" card, 12-icon tech stack grid, "India — Available for remote work" card. | Cards reveal on scroll-in-view via Framer Motion staggered variants; per-card hover gradients; tech-stack tiles have `whileHover` scale/lift. |
 | 3 | Experience | `src/sections/Experience.jsx` | Vertical timeline with two roles: Instinct Innovations (current) and Cogoport. | Staggered slide-in on scroll-into-view. |
 | 4 | Projects | `src/sections/Projects.jsx` | Two project cards (Barber Queue Tracking, JobPilot). | Mouse-following radial-gradient spotlight on each card (Framer `useMotionValue` + `useMotionTemplate`), staggered reveals. |
 | 5 | Contact | `src/sections/Contact.jsx` | "Let's build something together." heading, "Say Hello" mailto button, 3 social icons (GitHub, LinkedIn, Email). Twitter icon commented out. Footer below. | Button + icon hover/tap scale. |
@@ -148,12 +148,12 @@ A bit about who I am and what I work with.
 
 **About — bio card (verbatim, two paragraphs)**:
 ```
-With over 3 years of experience in frontend engineering, I specialize in crafting pixel-perfect, performant web experiences. I love bridging the gap between design and engineering — turning complex interactions into smooth, intuitive interfaces.
+With over 4 years of experience in frontend engineering, I specialize in crafting pixel-perfect, performant web experiences. I love bridging the gap between design and engineering — turning complex interactions into smooth, intuitive interfaces.
 
 Currently exploring WebXR, spatial UIs, and AI-powered developer tools. When I'm not coding, you'll find me exploring new design trends or tinkering with creative experiments.
 ```
 
-**About — stat cards**: `3+` / `Years of Experience`; `India` / `Available for remote work`.
+**About — stat cards**: `4+` / `Years of Experience`; `India` / `Available for remote work`.
 
 ## 6. Contact Section
 

@@ -170,7 +170,7 @@ export default function About() {
             </div>
             <p className="text-white/80 text-lg leading-relaxed font-light">
               Full-stack engineer with{" "}
-              <span className="text-white font-medium">3+ years</span> of
+              <span className="text-white font-medium">4+ years</span> of
               experience building production web apps end-to-end — strongest on
               the frontend (React, Next.js, design systems, performance), and
               comfortable across the stack with Node, NestJS, Postgres, and
@@ -195,7 +195,7 @@ export default function About() {
           <div className="relative z-10 text-center">
             <Calendar size={20} className="text-amber-400 mx-auto mb-3" />
             <div className="text-5xl md:text-6xl font-heading font-extrabold text-gradient mb-2">
-              3+
+              4+
             </div>
             <p className="text-white/50 text-sm">Years of Experience</p>
           </div>

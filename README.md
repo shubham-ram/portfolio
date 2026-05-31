@@ -12,7 +12,7 @@ A creative, interactive portfolio showcasing my work as a **Full-Stack Engineer*
 - **Performance Optimized:** Built on Vite + React 19 for fast load times.
 
 ## 👨‍💻 About Me
-Hi, I'm **Shubham** — a full-stack engineer with **3+ years** of experience building production web apps end-to-end. I'm strongest on the frontend (React, Next.js, design systems, performance), and comfortable across the stack with Node, NestJS, Postgres, and real-time APIs. I love bridging design and engineering — turning complex interactions into smooth, intuitive interfaces while shaping the APIs and data models that power them. Currently exploring AI-powered developer tools and creative web experiments.
+Hi, I'm **Shubham** — a full-stack engineer with **4+ years** of experience building production web apps end-to-end. I'm strongest on the frontend (React, Next.js, design systems, performance), and comfortable across the stack with Node, NestJS, Postgres, and real-time APIs. I love bridging design and engineering — turning complex interactions into smooth, intuitive interfaces while shaping the APIs and data models that power them. Currently exploring AI-powered developer tools and creative web experiments.
 
 ### 💼 Experience
 - **Software Developer** @ *Instinct Innovations* (Nov 2023 — Present)
