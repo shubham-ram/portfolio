@@ -23,6 +23,27 @@ const PROJECTS = [
   },
   {
     id: 2,
+    title: "Streamora",
+    description:
+      "A full-stack live video streaming platform enabling creators to broadcast live and viewers to watch in real-time, architected as a modular monorepo with a Next.js frontend and NestJS backend.",
+    features: [
+      "Real-time bidirectional communication powered by Socket.io, orchestrating synchronized broadcasting and viewer interactions across concurrent streaming sessions.",
+      "Type-safe full-stack architecture leveraging NestJS with Prisma ORM and PostgreSQL for resilient data persistence, paired with a Next.js 14 App Router frontend styled via Tailwind and Shadcn UI.",
+    ],
+    tech: [
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Socket.io",
+      "Tailwind CSS",
+    ],
+    link: "#",
+    github: "https://github.com/shubham-ram/Streamora",
+  },
+  {
+    id: 3,
     title: "JobPilot",
     description:
       "A full-stack AI application that generates highly personalized, context-aware answers for job applications using Gemini AI, integrating user profile context and secure Turnstile bot protection.",
