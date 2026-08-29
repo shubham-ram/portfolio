@@ -10,6 +10,27 @@ import { ExternalLink, Github, ChevronRight } from "lucide-react";
 const PROJECTS = [
   {
     id: 1,
+    title: "GradeMyFood",
+    description:
+      "A food-label scanner for Indian shoppers that turns a photo of a nutrition panel into an A–E health grade with allergen and health-condition warnings, built as a pnpm monorepo with a React web app and a NestJS core sharing one Zod-typed contract.",
+    features: [
+      "Gemini's vision model is confined to transcribing the label into Zod-validated JSON, while the A–E grade comes from a pure, deterministic Nutri-Score 2023 engine unit-tested against Open Food Facts reference results.",
+      "A pre-scoring gate rejects non-food items and labels with no scoreable nutrients, since an all-null nutrient set would otherwise collect zero negative points and return a bogus A; such scans are surfaced as ungraded rather than persisted.",
+    ],
+    tech: [
+      "NestJS",
+      "React",
+      "TypeScript",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "Google Gemini",
+      "Tailwind CSS",
+    ],
+    link: "https://grademyfood.netlify.app",
+    github: "#",
+  },
+  {
+    id: 2,
     title: "Barber Queue Tracking",
     description:
       "A comprehensive Progressive Web App (PWA) that streamlines queue management for barbershops, offering real-time status tracking for customers and an intuitive dashboard for shopkeepers to manage their daily operations and services.",
@@ -22,7 +43,7 @@ const PROJECTS = [
     github: "https://github.com/vedantkirve/Barber-Queue-Management-Frontend",
   },
   {
-    id: 2,
+    id: 3,
     title: "Streamora",
     description:
       "A full-stack live video streaming platform enabling creators to broadcast live and viewers to watch in real-time, architected as a modular monorepo with a Next.js frontend and NestJS backend.",
@@ -43,7 +64,7 @@ const PROJECTS = [
     github: "https://github.com/shubham-ram/Streamora",
   },
   {
-    id: 3,
+    id: 4,
     title: "JobPilot",
     description:
       "A full-stack AI application that generates highly personalized, context-aware answers for job applications using Gemini AI, integrating user profile context and secure Turnstile bot protection.",
