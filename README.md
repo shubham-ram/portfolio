@@ -15,7 +15,8 @@ A creative, interactive portfolio showcasing my work as a **Full-Stack Engineer*
 Hi, I'm **Shubham** — a full-stack engineer with **4+ years** of experience building production web apps end-to-end. I'm strongest on the frontend (React, Next.js, design systems, performance), and comfortable across the stack with Node, NestJS, Postgres, and real-time APIs. I love bridging design and engineering — turning complex interactions into smooth, intuitive interfaces while shaping the APIs and data models that power them. Currently exploring AI-powered developer tools and creative web experiments.
 
 ### 💼 Experience
-- **Software Developer** @ *Instinct Innovations* (Nov 2023 — Present)
+- **SDE II** @ *Rebel Foods* (Jul 2026 — Present)
+- **Software Developer** @ *Instinct Innovations* (Nov 2023 — Jul 2026)
 - **Associate Software Engineer** @ *Cogoport* (Aug 2022 — Nov 2023)
 
 ### 🚀 Featured Projects

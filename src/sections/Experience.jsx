@@ -4,9 +4,18 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
+    company: "Rebel Foods",
+    role: "SDE II",
+    period: "Jul 2026 — Present",
+    description:
+      "Modernizing the frontend of Spark, Rebel Foods' inventory management platform. Upgraded to Vite and React 18 for 30% faster builds, moved hosting to S3 + CloudFront to cut deploy time by ~90% and costs by 15%, and split the legacy monorepo for independent releases.",
+    tech: ["React", "Jenkins", "AWS", "Node.js"],
+    current: true,
+  },
+  {
     company: "Instinct Innovations",
     role: "Software Developer",
-    period: "Nov 2023 — Present",
+    period: "Nov 2023 — Jul 2026",
     description:
       "Building and shipping production-grade frontend applications. Working on complex UI architectures, performance optimization, and modern React patterns.",
     tech: [
@@ -19,7 +28,7 @@ const experiences = [
       "Wordpress",
       "Playwright",
     ],
-    current: true,
+    current: false,
   },
   {
     company: "Cogoport",
